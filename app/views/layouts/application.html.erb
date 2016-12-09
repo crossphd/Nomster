@@ -52,5 +52,36 @@
 
 <%= yield %>
 
+<br class="clr" />
+
+<div id="footer">
+  <div class="container">
+  
+      <div class="col-xs-12 col-sm-6 foot-space text-center">
+        <b>Created by Christopher Ross</b>
+        <br />
+        <%= link_to 'http://www.crossphd.com', :target => "_blank" do %>
+          <%= image_tag 'crossphd.jpg', class: 'social-button' %>
+        <% end %>
+        <%= mail_to "chris@crossphd.com" do %>
+          <span>chris@crossphd.com</span>
+        <% end %>
+      </div>
+      <div class="col-xs-12 col-sm-6 foot-space text-center social">
+        <b>Social</b>
+        <br>
+        <%= link_to 'https://twitter.com/crossphd', :target => "_blank" do %>
+          <%= image_tag 'twitter2.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://github.com/CRossPhD', :target => "_blank" do %>
+          <%= image_tag 'github2.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://medium.com/@crossphd', :target => "_blank" do %>
+          <%= image_tag 'medium2.png', class: 'social-button' %>
+        <% end %>
+      </div>
+  </div>
+</div>
+
 </body>
 </html>
